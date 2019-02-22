@@ -1,0 +1,9 @@
+{
+    "id": "BOOK1",
+    "name": "Vacation",
+    "hotelId": "NYC1",
+    "roomId": 1001,
+    "modified": false,
+    "checkinDate": "2019-02-25",
+    "checkoutDate": "2019-02-26"
+}

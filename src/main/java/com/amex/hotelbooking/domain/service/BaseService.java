@@ -11,20 +11,24 @@ import java.util.List;
  */
 public abstract class BaseService<TE, T> extends ReadOnlyBaseService<TE, T> {
 
-    private HotelRepository<TE, T> _repository;
+    private HotelRepository _repository;
 
-    public BaseService(HotelRepository<TE, T> repository) {
+    public BaseService(HotelRepository repository) {
         super(repository);
         this._repository = repository;
     }
 
+/*
     public void add(TE entity) throws Exception {
         _repository.save(entity);
     }
+*/
 
+/*
     public Collection<TE> getAll() {
         List<TE> allItems = new ArrayList<>();
         _repository.findAll().forEach(allItems::add);
         return allItems;
     }
+*/
 }

@@ -1,0 +1,24 @@
+{
+    "id": "NYC9",
+    "name": "Downtown hotel",
+    "address": "101 downtown st, New York, NY",
+    "modified": false,
+    "rooms": [
+       {
+          "id": 3001,
+          "hotelId": "NYC9",
+          "name": "Best room",
+          "roomNumber": "g1",
+          "bedType": "K",  
+          "modified": false
+       },
+       {
+          "id": 3002,
+          "hotelId": "NYC9",
+          "name": "Smoking room",
+          "roomNumber": "g2",
+          "bedType": "K",  
+          "modified": false
+       }
+    ]
+}

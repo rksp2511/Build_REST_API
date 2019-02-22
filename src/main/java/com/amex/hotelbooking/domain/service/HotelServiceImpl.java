@@ -13,24 +13,24 @@ import java.util.*;
 @Service
 public class HotelServiceImpl extends BaseService<Hotel, String> implements HotelService {
 
-    private HotelRepository<Hotel, String> hotelRepository;
+    private HotelRepository hotelRepository;
 
     @Autowired
-    public HotelServiceImpl(HotelRepository<Hotel, String> repository) {
+    public HotelServiceImpl(HotelRepository repository) {
         super(repository);
         this.hotelRepository = repository;
     }
 
-    @Override
     public void add(Hotel hotel) throws Exception {
-        if (hotelRepository.containsName(hotel.getName())) {
+        Collection<Hotel> hotels = hotelRepository.findByName(hotel.getName());
+        if (hotels != null && hotels.size() > 0) {
             throw new Exception(String.format("There is already a hotel with the name - %s", hotel.getName()));
         }
 
         if (hotel.getName() == null || hotel.getName().isEmpty()) {
             throw new Exception("Hotel name cannot be null or empty.");
         }
-        super.add(hotel);
+        hotelRepository.save(hotel);
     }
 
     @Override
@@ -62,6 +62,6 @@ public class HotelServiceImpl extends BaseService<Hotel, String> implements Hote
 
     @Override
     public Collection<Hotel> findByCriteria(Map<String, ArrayList<String>> name) throws Exception {
-        return null;
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 }

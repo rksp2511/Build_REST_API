@@ -9,14 +9,17 @@ import javax.persistence.MappedSuperclass;
 public abstract class BaseEntity<T> extends Entity<T> {
     private boolean modified;
 
+    public BaseEntity() {
+        super();
+    }
+
     /**
      *
      * @param id
      * @param name
      */
     public BaseEntity(T id, String name) {
-        super.id = id;
-        super.name = name;
+        super(id, name);
         this.modified = false;
     }
 

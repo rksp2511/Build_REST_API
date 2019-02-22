@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://localhost:8080/swagger-ui.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="icon" type="image/png" href="http://localhost:8080/images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://localhost:8080/images/favicon-16x16.png" sizes="16x16">
+  <link href="./dsc_0717_files/typography.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="./dsc_0717_files/reset.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="./dsc_0717_files/screen.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="./dsc_0717_files/reset.css" media="print" rel="stylesheet" type="text/css">
+  <link href="./dsc_0717_files/print.css" media="print" rel="stylesheet" type="text/css">
+  <script src="./dsc_0717_files/jquery-1.8.0.min.js" type="text/javascript"></script>
+  <script src="./dsc_0717_files/jquery.slideto.min.js" type="text/javascript"></script>
+  <script src="./dsc_0717_files/jquery.wiggle.min.js" type="text/javascript"></script>
+  <script src="./dsc_0717_files/jquery.ba-bbq.min.js" type="text/javascript"></script>
+  <script src="./dsc_0717_files/handlebars-2.0.0.js" type="text/javascript"></script>
+  <script src="./dsc_0717_files/underscore-min.js" type="text/javascript"></script>
+  <script src="./dsc_0717_files/backbone-min.js" type="text/javascript"></script>
+  <script src="./dsc_0717_files/swagger-ui.min.js" type="text/javascript"></script>
+  <script src="./dsc_0717_files/highlight.7.3.pack.js" type="text/javascript"></script>
+  <script src="./dsc_0717_files/jsoneditor.min.js" type="text/javascript"></script>
+  <script src="./dsc_0717_files/marked.js" type="text/javascript"></script>
+  <script src="./dsc_0717_files/swagger-oauth.js" type="text/javascript"></script>
+
+  <script src="./dsc_0717_files/springfox.js" type="text/javascript"></script>
+</head>
+
+<body class="swagger-section">
+<div id="header">
+  <div class="swagger-ui-wrap">
+    <a id="logo" href="http://swagger.io/">swagger</a>
+
+    <form id="api_selector">
+      <div class="input">
+        <select id="select_baseUrl" name="select_baseUrl"><option value="http://localhost:8080/v2/api-docs?group=hotel-booking">hotel-booking (/v2/api-docs?group=hotel-booking)</option></select><input placeholder="http://example.com/api" id="input_baseUrl" name="baseUrl" type="text" style="display: none;">
+      </div>
+      <div class="input"><input placeholder="api_key" id="input_apiKey" name="apiKey" type="text"></div>
+      <div class="input"><a id="explore" href="http://localhost:8080/swagger-ui.html#" data-sw-translate="">Explore</a></div>
+    </form>
+  </div>
+</div>
+
+<div id="message-bar" class="swagger-ui-wrap message-success" data-sw-translate=""></div>
+<div id="swagger-ui-container" class="swagger-ui-wrap"><div class="info" id="api_info">
+  <div class="info_title">Hotel Booking Services</div>
+  <div class="info_description markdown"><p>A set of services to do hotel room booking</p>
+</div>
+  
+  <div class="info_name" data-sw-translate="">Created by Nagaraja Settra</div>
+  <div class="info_url" data-sw-translate="">See more at <a href="https://twitter.com/developer">https://twitter.com/developer</a></div>
+  
+  <div class="info_license"><a href="http://localhost:8080/swagger-ui.html"></a></div>
+</div>
+<div class="container" id="resources_container">
+  <ul id="resources"><li id="resource_booking" class="resource"><div class="heading">
+  <h2>
+    <a href="http://localhost:8080/swagger-ui.html#!/booking" class="toggleEndpointList" data-id="booking">booking</a>  : Booking rooms and existing booking lookup service
+  </h2>
+  <ul class="options">
+    <li>
+      <a href="http://localhost:8080/swagger-ui.html#!/booking" id="endpointListTogger_booking" class="toggleEndpointList" data-id="booking" data-sw-translate="">Show/Hide</a>
+    </li>
+    <li>
+      <a href="http://localhost:8080/swagger-ui.html#" class="collapseResource" data-id="booking" data-sw-translate="">
+        List Operations
+      </a>
+    </li>
+    <li>
+      <a href="http://localhost:8080/swagger-ui.html#" class="expandResource" data-id="booking" data-sw-translate="">
+        Expand Operations
+      </a>
+    </li>
+  </ul>
+</div>
+<ul class="endpoints" id="booking_endpoint_list" style="display:none">
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="get operation" id="booking_findBookingByName">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="http://localhost:8080/swagger-ui.html#!/booking/findBookingByName" class="toggleOperation">get</a>
+          </span>
+          <span class="path">
+          <a href="http://localhost:8080/swagger-ui.html#!/booking/findBookingByName" class="toggleOperation ">/v1/booking</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="http://localhost:8080/swagger-ui.html#!/booking/findBookingByName" class="toggleOperation">Find booking</a>
+          </li>
+        </ul>
+      </div>
+      <div class="content" id="booking_findBookingByName_content" style="display:none">
+        <h4><span data-sw-translate="">Implementation Notes</span></h4>
+        <div class="markdown"><p>Finds an existing booking by it's name</p>
+</div>
+
+        
+          <h4><span data-sw-translate="">Response Class</span> (<span data-sw-translate="">Status</span> 200)</h4>
+            <div class="markdown"><p>OK</p>
+</div>
+          <p><span class="model-signature"><div><div>
+<ul class="signature-nav">
+  <li><a class="description-link" href="http://localhost:8080/swagger-ui.html#" data-sw-translate="">Model</a></li>
+  <li><a class="snippet-link selected" href="http://localhost:8080/swagger-ui.html#" data-sw-translate="">Model Schema</a></li>
+</ul>
+<div>
+
+<div class="signature-container">
+  <div class="description" style="display: none;">
+    <span class="strong">Collection«Booking» {</span><span class="strong">}</span>
+  </div>
+
+  <div class="snippet" style="display: block;">
+    <pre><code class="json">{}</code></pre>
+    <small class="notice" data-sw-translate=""></small>
+  </div>
+</div>
+
+</div></div></div></span></p>
+          <br>
+          <div class="response-content-type"><div><label data-sw-translate="" for="rct0.8680993375028441">Response Content Type</label>
+<select name="responseContentType" id="rct0.8680993375028441">
+  <option value="*/*">*/*</option>
+</select>
+</div></div>
+
+
+
+        <form accept-charset="UTF-8" class="sandbox">
+          <div style="margin:0;padding:0;display:inline"></div>
+          <h4 data-sw-translate="">Parameters</h4>
+          <table class="fullwidth">
+          <thead>
+            <tr>
+            <th style="width: 100px; max-width: 100px" data-sw-translate="">Parameter</th>
+            <th style="width: 310px; max-width: 310px" data-sw-translate="">Value</th>
+            <th style="width: 200px; max-width: 200px" data-sw-translate="">Description</th>
+            <th style="width: 100px; max-width: 100px" data-sw-translate="">Parameter Type</th>
+            <th style="width: 220px; max-width: 230px" data-sw-translate="">Data Type</th>
+            </tr>
+          </thead>
+          <tbody class="operation-params">
+
+          <tr><td class="code required"><label for="mname0.708060561357075">name</label></td>
+<td>
+<input class="parameter required" minlength="1" name="name" placeholder="(required)" id="mname0.708060561357075" type="text" value=""></td>
+<td>
+	<strong><span class="markdown"><p>name</p>
+</span></strong>
+</td>
+<td>query</td>
+<td><span class="model-signature">string</span></td>
+</tr></tbody>
+          </table>
+          <div style="margin:0;padding:0;display:inline"></div>
+          <h4 data-sw-translate="">Response Messages</h4>
+          <table class="fullwidth">
+            <thead>
+            <tr>
+              <th data-sw-translate="">HTTP Status Code</th>
+              <th data-sw-translate="">Reason</th>
+              <th data-sw-translate="">Response Model</th>
+              <th data-sw-translate="">Headers</th>
+            </tr>
+            </thead>
+            <tbody class="operation-status">
+            <tr><td width="15%" class="code">401</td>
+<td class="markdown"><p>Unauthorized</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td width="15%" class="code">403</td>
+<td class="markdown"><p>Forbidden</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td width="15%" class="code">404</td>
+<td class="markdown"><p>Not Found</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr></tbody>
+          </table>
+          <div class="sandbox_header">
+            <input class="submit" type="submit" value="Try it out!" data-sw-translate="">
+            <a href="http://localhost:8080/swagger-ui.html#" class="response_hider" style="display:none" data-sw-translate="">Hide Response</a>
+            <span class="response_throbber" style="display:none"></span>
+          </div>
+        </form>
+        <div class="response" style="display:none">
+          <h4 class="curl">Curl</h4>
+          <div class="block curl"></div>
+          <h4 data-sw-translate="">Request URL</h4>
+          <div class="block request_url"></div>
+          <h4 data-sw-translate="">Request Headers</h4>
+          <div class="block request_headers"></div>
+          <h4 data-sw-translate="">Response Body</h4>
+          <div class="block response_body"></div>
+          <h4 data-sw-translate="">Response Code</h4>
+          <div class="block response_code"></div>
+          <h4 data-sw-translate="">Response Headers</h4>
+          <div class="block response_headers"></div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</li><li class="endpoint">
+  <ul class="operations">
+    <li class="post operation" id="booking_makeNewBooking">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="http://localhost:8080/swagger-ui.html#!/booking/makeNewBooking" class="toggleOperation">post</a>
+          </span>
+          <span class="path">
+          <a href="http://localhost:8080/swagger-ui.html#!/booking/makeNewBooking" class="toggleOperation ">/v1/booking</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="http://localhost:8080/swagger-ui.html#!/booking/makeNewBooking" class="toggleOperation">Make new booking</a>
+          </li>
+        </ul>
+      </div>
+      <div class="content" id="booking_makeNewBooking_content" style="display:none">
+        <h4><span data-sw-translate="">Implementation Notes</span></h4>
+        <div class="markdown"><p>Makes new booking for a room in a hotel</p>
+</div>
+
+        
+          <h4><span data-sw-translate="">Response Class</span> (<span data-sw-translate="">Status</span> 200)</h4>
+            <div class="markdown"><p>OK</p>
+</div>
+          <p><span class="model-signature"><div><div>
+<ul class="signature-nav">
+  <li><a class="description-link" href="http://localhost:8080/swagger-ui.html#" data-sw-translate="">Model</a></li>
+  <li><a class="snippet-link selected" href="http://localhost:8080/swagger-ui.html#" data-sw-translate="">Model Schema</a></li>
+</ul>
+<div>
+
+<div class="signature-container">
+  <div class="description" style="display: none;">
+    <span class="strong">Booking {</span><div><span class="propName ">checkinDate</span> (<span class="propType">LocalDate</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">checkoutDate</span> (<span class="propType">LocalDate</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">hotelId</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">id</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">modified</span> (<span class="propType">boolean</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">name</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">roomId</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span><br><span class="strong">LocalDate {</span><div><span class="propName ">chronology</span> (<span class="propType">IsoChronology</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">dayOfMonth</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>),</div><span class="propWrap"><div><span class="propName ">dayOfWeek</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>) = <span class="propVals">['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY']</span><table class="optionsWrapper"><tbody><tr><th colspan="2">string</th></tr><tr><td class="optionName">Enum:</td><td>"MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"</td></tr></tbody></table>,</div><div><span class="propName ">dayOfYear</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">era</span> (<span class="propType">Era</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">leapYear</span> (<span class="propType">boolean</span>, <span class="propOptKey">optional</span>),</div><span class="propWrap"><div><span class="propName ">month</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>) = <span class="propVals">['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER']</span><table class="optionsWrapper"><tbody><tr><th colspan="2">string</th></tr><tr><td class="optionName">Enum:</td><td>"JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"</td></tr></tbody></table>,</div><div><span class="propName ">monthValue</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">year</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span><br><span class="strong">IsoChronology {</span><div><span class="propName ">calendarType</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">id</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span><br><span class="strong">Era {</span><div><span class="propName ">value</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span>
+  </span></span></div>
+
+  <div class="snippet" style="display: block;">
+    <pre><code class="json">{
+  "<span class="attribute">checkinDate</span>": <span class="value">{
+    "<span class="attribute">chronology</span>": <span class="value">{
+      "<span class="attribute">calendarType</span>": <span class="value"><span class="string">"string"</span></span>,
+      "<span class="attribute">id</span>": <span class="value"><span class="string">"string"</span>
+    }</span></span>,
+    "<span class="attribute">dayOfMonth</span>": <span class="value"><span class="number">0</span></span>,
+    "<span class="attribute">dayOfWeek</span>": <span class="value"><span class="string">"MONDAY"</span></span>,
+    "<span class="attribute">dayOfYear</span>": <span class="value"><span class="number">0</span></span>,
+    "<span class="attribute">era</span>": <span class="value">{
+      "<span class="attribute">value</span>": <span class="value"><span class="number">0</span>
+    }</span></span>,
+    "<span class="attribute">leapYear</span>": <span class="value"><span class="literal">true</span></span>,
+    "<span class="attribute">month</span>": <span class="value"><span class="string">"JANUARY"</span></span>,
+    "<span class="attribute">monthValue</span>": <span class="value"><span class="number">0</span></span>,
+    "<span class="attribute">year</span>": <span class="value"><span class="number">0</span>
+  }</span></span>,
+  "<span class="attribute">checkoutDate</span>": <span class="value">{
+    "<span class="attribute">chronology</span>": <span class="value">{
+      "<span class="attribute">calendarType</span>": <span class="value"><span class="string">"string"</span></span>,
+      "<span class="attribute">id</span>": <span class="value"><span class="string">"string"</span>
+    }</span></span>,
+    "<span class="attribute">dayOfMonth</span>": <span class="value"><span class="number">0</span></span>,
+    "<span class="attribute">dayOfWeek</span>": <span class="value"><span class="string">"MONDAY"</span></span>,
+    "<span class="attribute">dayOfYear</span>": <span class="value"><span class="number">0</span></span>,
+    "<span class="attribute">era</span>": <span class="value">{
+      "<span class="attribute">value</span>": <span class="value"><span class="number">0</span>
+    }</span></span>,
+    "<span class="attribute">leapYear</span>": <span class="value"><span class="literal">true</span></span>,
+    "<span class="attribute">month</span>": <span class="value"><span class="string">"JANUARY"</span></span>,
+    "<span class="attribute">monthValue</span>": <span class="value"><span class="number">0</span></span>,
+    "<span class="attribute">year</span>": <span class="value"><span class="number">0</span>
+  }</span></span>,
+  "<span class="attribute">hotelId</span>": <span class="value"><span class="string">"string"</span></span>,
+  "<span class="attribute">id</span>": <span class="value"><span class="string">"string"</span></span>,
+  "<span class="attribute">modified</span>": <span class="value"><span class="literal">true</span></span>,
+  "<span class="attribute">name</span>": <span class="value"><span class="string">"string"</span></span>,
+  "<span class="attribute">roomId</span>": <span class="value"><span class="number">0</span>
+}</span></code></pre>
+    <small class="notice" data-sw-translate=""></small>
+  </div>
+</div>
+
+</div></div></div></span></p>
+          <br>
+          <div class="response-content-type"><div><label data-sw-translate="" for="rct0.5245053497661134">Response Content Type</label>
+<select name="responseContentType" id="rct0.5245053497661134">
+  <option value="*/*">*/*</option>
+</select>
+</div></div>
+
+
+
+        <form accept-charset="UTF-8" class="sandbox">
+          <div style="margin:0;padding:0;display:inline"></div>
+          <h4 data-sw-translate="">Parameters</h4>
+          <table class="fullwidth">
+          <thead>
+            <tr>
+            <th style="width: 100px; max-width: 100px" data-sw-translate="">Parameter</th>
+            <th style="width: 310px; max-width: 310px" data-sw-translate="">Value</th>
+            <th style="width: 200px; max-width: 200px" data-sw-translate="">Description</th>
+            <th style="width: 100px; max-width: 100px" data-sw-translate="">Parameter Type</th>
+            <th style="width: 220px; max-width: 230px" data-sw-translate="">Data Type</th>
+            </tr>
+          </thead>
+          <tbody class="operation-params">
+
+          <tr><td class="code required"><label for="mbookingVO0.8186078822370995">bookingVO</label></td>
+<td>
+				<textarea class="body-textarea required" placeholder="(required)" name="bookingVO" id="mbookingVO0.8186078822370995"></textarea>
+				<div class="editor_holder"></div>
+				<br>
+				<div class="parameter-content-type"><div><label for="pct0.7282096062525112" data-sw-translate="">Parameter content type:</label>
+<select name="parameterContentType" id="pct0.7282096062525112">
+  <option value="application/json">application/json</option>
+</select>
+</div></div>
+</td>
+<td>
+	<strong><span class="markdown"><p>bookingVO</p>
+</span></strong>
+</td>
+<td>body</td>
+<td><span class="model-signature"><div><div>
+<ul class="signature-nav">
+  <li><a class="description-link" href="http://localhost:8080/swagger-ui.html#" data-sw-translate="">Model</a></li>
+  <li><a class="snippet-link selected" href="http://localhost:8080/swagger-ui.html#" data-sw-translate="">Model Schema</a></li>
+</ul>
+<div>
+
+<div class="signature-container">
+  <div class="description" style="display: none;">
+    <span class="strong">BookingVO {</span><div><span class="propName ">checkinDate</span> (<span class="propType">LocalDate</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">checkoutDate</span> (<span class="propType">LocalDate</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">hotelId</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">id</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">name</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">roomId</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span><br><span class="strong">LocalDate {</span><div><span class="propName ">chronology</span> (<span class="propType">IsoChronology</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">dayOfMonth</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>),</div><span class="propWrap"><div><span class="propName ">dayOfWeek</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>) = <span class="propVals">['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY']</span><table class="optionsWrapper"><tbody><tr><th colspan="2">string</th></tr><tr><td class="optionName">Enum:</td><td>"MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"</td></tr></tbody></table>,</div><div><span class="propName ">dayOfYear</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">era</span> (<span class="propType">Era</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">leapYear</span> (<span class="propType">boolean</span>, <span class="propOptKey">optional</span>),</div><span class="propWrap"><div><span class="propName ">month</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>) = <span class="propVals">['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER']</span><table class="optionsWrapper"><tbody><tr><th colspan="2">string</th></tr><tr><td class="optionName">Enum:</td><td>"JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"</td></tr></tbody></table>,</div><div><span class="propName ">monthValue</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">year</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span><br><span class="strong">IsoChronology {</span><div><span class="propName ">calendarType</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">id</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span><br><span class="strong">Era {</span><div><span class="propName ">value</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span>
+  </span></span></div>
+
+  <div class="snippet" style="display: block;">
+    <pre><code class="json">{
+  "<span class="attribute">checkinDate</span>": <span class="value">{
+    "<span class="attribute">chronology</span>": <span class="value">{
+      "<span class="attribute">calendarType</span>": <span class="value"><span class="string">"string"</span></span>,
+      "<span class="attribute">id</span>": <span class="value"><span class="string">"string"</span>
+    }</span></span>,
+    "<span class="attribute">dayOfMonth</span>": <span class="value"><span class="number">0</span></span>,
+    "<span class="attribute">dayOfWeek</span>": <span class="value"><span class="string">"MONDAY"</span></span>,
+    "<span class="attribute">dayOfYear</span>": <span class="value"><span class="number">0</span></span>,
+    "<span class="attribute">era</span>": <span class="value">{
+      "<span class="attribute">value</span>": <span class="value"><span class="number">0</span>
+    }</span></span>,
+    "<span class="attribute">leapYear</span>": <span class="value"><span class="literal">true</span></span>,
+    "<span class="attribute">month</span>": <span class="value"><span class="string">"JANUARY"</span></span>,
+    "<span class="attribute">monthValue</span>": <span class="value"><span class="number">0</span></span>,
+    "<span class="attribute">year</span>": <span class="value"><span class="number">0</span>
+  }</span></span>,
+  "<span class="attribute">checkoutDate</span>": <span class="value">{
+    "<span class="attribute">chronology</span>": <span class="value">{
+      "<span class="attribute">calendarType</span>": <span class="value"><span class="string">"string"</span></span>,
+      "<span class="attribute">id</span>": <span class="value"><span class="string">"string"</span>
+    }</span></span>,
+    "<span class="attribute">dayOfMonth</span>": <span class="value"><span class="number">0</span></span>,
+    "<span class="attribute">dayOfWeek</span>": <span class="value"><span class="string">"MONDAY"</span></span>,
+    "<span class="attribute">dayOfYear</span>": <span class="value"><span class="number">0</span></span>,
+    "<span class="attribute">era</span>": <span class="value">{
+      "<span class="attribute">value</span>": <span class="value"><span class="number">0</span>
+    }</span></span>,
+    "<span class="attribute">leapYear</span>": <span class="value"><span class="literal">true</span></span>,
+    "<span class="attribute">month</span>": <span class="value"><span class="string">"JANUARY"</span></span>,
+    "<span class="attribute">monthValue</span>": <span class="value"><span class="number">0</span></span>,
+    "<span class="attribute">year</span>": <span class="value"><span class="number">0</span>
+  }</span></span>,
+  "<span class="attribute">hotelId</span>": <span class="value"><span class="string">"string"</span></span>,
+  "<span class="attribute">id</span>": <span class="value"><span class="string">"string"</span></span>,
+  "<span class="attribute">name</span>": <span class="value"><span class="string">"string"</span></span>,
+  "<span class="attribute">roomId</span>": <span class="value"><span class="number">0</span>
+}</span></code></pre>
+    <small class="notice" data-sw-translate="">Click to set as parameter value</small>
+  </div>
+</div>
+
+</div></div></div></span></td>
+</tr></tbody>
+          </table>
+          <div style="margin:0;padding:0;display:inline"></div>
+          <h4 data-sw-translate="">Response Messages</h4>
+          <table class="fullwidth">
+            <thead>
+            <tr>
+              <th data-sw-translate="">HTTP Status Code</th>
+              <th data-sw-translate="">Reason</th>
+              <th data-sw-translate="">Response Model</th>
+              <th data-sw-translate="">Headers</th>
+            </tr>
+            </thead>
+            <tbody class="operation-status">
+            <tr><td width="15%" class="code">201</td>
+<td class="markdown"><p>Created</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td width="15%" class="code">401</td>
+<td class="markdown"><p>Unauthorized</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td width="15%" class="code">403</td>
+<td class="markdown"><p>Forbidden</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td width="15%" class="code">404</td>
+<td class="markdown"><p>Not Found</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr></tbody>
+          </table>
+          <div class="sandbox_header">
+            <input class="submit" type="submit" value="Try it out!" data-sw-translate="">
+            <a href="http://localhost:8080/swagger-ui.html#" class="response_hider" style="display:none" data-sw-translate="">Hide Response</a>
+            <span class="response_throbber" style="display:none"></span>
+          </div>
+        </form>
+        <div class="response" style="display:none">
+          <h4 class="curl">Curl</h4>
+          <div class="block curl"></div>
+          <h4 data-sw-translate="">Request URL</h4>
+          <div class="block request_url"></div>
+          <h4 data-sw-translate="">Request Headers</h4>
+          <div class="block request_headers"></div>
+          <h4 data-sw-translate="">Response Body</h4>
+          <div class="block response_body"></div>
+          <h4 data-sw-translate="">Response Code</h4>
+          <div class="block response_code"></div>
+          <h4 data-sw-translate="">Response Headers</h4>
+          <div class="block response_headers"></div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</li><li class="endpoint">
+  <ul class="operations">
+    <li class="get operation" id="booking_findBookingById">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="http://localhost:8080/swagger-ui.html#!/booking/findBookingById" class="toggleOperation">get</a>
+          </span>
+          <span class="path">
+          <a href="http://localhost:8080/swagger-ui.html#!/booking/findBookingById" class="toggleOperation ">/v1/booking/{id}</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="http://localhost:8080/swagger-ui.html#!/booking/findBookingById" class="toggleOperation">Find booking by id</a>
+          </li>
+        </ul>
+      </div>
+      <div class="content" id="booking_findBookingById_content" style="display:none">
+        <h4><span data-sw-translate="">Implementation Notes</span></h4>
+        <div class="markdown"><p>Finds an existing booking by it's id</p>
+</div>
+
+        
+          <h4><span data-sw-translate="">Response Class</span> (<span data-sw-translate="">Status</span> 200)</h4>
+            <div class="markdown"><p>OK</p>
+</div>
+          <p><span class="model-signature"><div><div>
+<ul class="signature-nav">
+  <li><a class="description-link" href="http://localhost:8080/swagger-ui.html#" data-sw-translate="">Model</a></li>
+  <li><a class="snippet-link selected" href="http://localhost:8080/swagger-ui.html#" data-sw-translate="">Model Schema</a></li>
+</ul>
+<div>
+
+<div class="signature-container">
+  <div class="description" style="display: none;">
+    <span class="strong">Booking {</span><div><span class="propName ">checkinDate</span> (<span class="propType">LocalDate</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">checkoutDate</span> (<span class="propType">LocalDate</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">hotelId</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">id</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">modified</span> (<span class="propType">boolean</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">name</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">roomId</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span><br><span class="strong">LocalDate {</span><div><span class="propName ">chronology</span> (<span class="propType">IsoChronology</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">dayOfMonth</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>),</div><span class="propWrap"><div><span class="propName ">dayOfWeek</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>) = <span class="propVals">['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY']</span><table class="optionsWrapper"><tbody><tr><th colspan="2">string</th></tr><tr><td class="optionName">Enum:</td><td>"MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"</td></tr></tbody></table>,</div><div><span class="propName ">dayOfYear</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">era</span> (<span class="propType">Era</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">leapYear</span> (<span class="propType">boolean</span>, <span class="propOptKey">optional</span>),</div><span class="propWrap"><div><span class="propName ">month</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>) = <span class="propVals">['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER']</span><table class="optionsWrapper"><tbody><tr><th colspan="2">string</th></tr><tr><td class="optionName">Enum:</td><td>"JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"</td></tr></tbody></table>,</div><div><span class="propName ">monthValue</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">year</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span><br><span class="strong">IsoChronology {</span><div><span class="propName ">calendarType</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">id</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span><br><span class="strong">Era {</span><div><span class="propName ">value</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span>
+  </span></span></div>
+
+  <div class="snippet" style="display: block;">
+    <pre><code class="json">{
+  "<span class="attribute">checkinDate</span>": <span class="value">{
+    "<span class="attribute">chronology</span>": <span class="value">{
+      "<span class="attribute">calendarType</span>": <span class="value"><span class="string">"string"</span></span>,
+      "<span class="attribute">id</span>": <span class="value"><span class="string">"string"</span>
+    }</span></span>,
+    "<span class="attribute">dayOfMonth</span>": <span class="value"><span class="number">0</span></span>,
+    "<span class="attribute">dayOfWeek</span>": <span class="value"><span class="string">"MONDAY"</span></span>,
+    "<span class="attribute">dayOfYear</span>": <span class="value"><span class="number">0</span></span>,
+    "<span class="attribute">era</span>": <span class="value">{
+      "<span class="attribute">value</span>": <span class="value"><span class="number">0</span>
+    }</span></span>,
+    "<span class="attribute">leapYear</span>": <span class="value"><span class="literal">true</span></span>,
+    "<span class="attribute">month</span>": <span class="value"><span class="string">"JANUARY"</span></span>,
+    "<span class="attribute">monthValue</span>": <span class="value"><span class="number">0</span></span>,
+    "<span class="attribute">year</span>": <span class="value"><span class="number">0</span>
+  }</span></span>,
+  "<span class="attribute">checkoutDate</span>": <span class="value">{
+    "<span class="attribute">chronology</span>": <span class="value">{
+      "<span class="attribute">calendarType</span>": <span class="value"><span class="string">"string"</span></span>,
+      "<span class="attribute">id</span>": <span class="value"><span class="string">"string"</span>
+    }</span></span>,
+    "<span class="attribute">dayOfMonth</span>": <span class="value"><span class="number">0</span></span>,
+    "<span class="attribute">dayOfWeek</span>": <span class="value"><span class="string">"MONDAY"</span></span>,
+    "<span class="attribute">dayOfYear</span>": <span class="value"><span class="number">0</span></span>,
+    "<span class="attribute">era</span>": <span class="value">{
+      "<span class="attribute">value</span>": <span class="value"><span class="number">0</span>
+    }</span></span>,
+    "<span class="attribute">leapYear</span>": <span class="value"><span class="literal">true</span></span>,
+    "<span class="attribute">month</span>": <span class="value"><span class="string">"JANUARY"</span></span>,
+    "<span class="attribute">monthValue</span>": <span class="value"><span class="number">0</span></span>,
+    "<span class="attribute">year</span>": <span class="value"><span class="number">0</span>
+  }</span></span>,
+  "<span class="attribute">hotelId</span>": <span class="value"><span class="string">"string"</span></span>,
+  "<span class="attribute">id</span>": <span class="value"><span class="string">"string"</span></span>,
+  "<span class="attribute">modified</span>": <span class="value"><span class="literal">true</span></span>,
+  "<span class="attribute">name</span>": <span class="value"><span class="string">"string"</span></span>,
+  "<span class="attribute">roomId</span>": <span class="value"><span class="number">0</span>
+}</span></code></pre>
+    <small class="notice" data-sw-translate=""></small>
+  </div>
+</div>
+
+</div></div></div></span></p>
+          <br>
+          <div class="response-content-type"><div><label data-sw-translate="" for="rct0.23756281620336406">Response Content Type</label>
+<select name="responseContentType" id="rct0.23756281620336406">
+  <option value="*/*">*/*</option>
+</select>
+</div></div>
+
+
+
+        <form accept-charset="UTF-8" class="sandbox">
+          <div style="margin:0;padding:0;display:inline"></div>
+          <h4 data-sw-translate="">Parameters</h4>
+          <table class="fullwidth">
+          <thead>
+            <tr>
+            <th style="width: 100px; max-width: 100px" data-sw-translate="">Parameter</th>
+            <th style="width: 310px; max-width: 310px" data-sw-translate="">Value</th>
+            <th style="width: 200px; max-width: 200px" data-sw-translate="">Description</th>
+            <th style="width: 100px; max-width: 100px" data-sw-translate="">Parameter Type</th>
+            <th style="width: 220px; max-width: 230px" data-sw-translate="">Data Type</th>
+            </tr>
+          </thead>
+          <tbody class="operation-params">
+
+          <tr><td class="code required"><label for="mid0.3670885391818186">id</label></td>
+<td>
+<input class="parameter required" minlength="1" name="id" placeholder="(required)" id="mid0.3670885391818186" type="text" value=""></td>
+<td>
+	<strong><span class="markdown"><p>id</p>
+</span></strong>
+</td>
+<td>path</td>
+<td><span class="model-signature">string</span></td>
+</tr></tbody>
+          </table>
+          <div style="margin:0;padding:0;display:inline"></div>
+          <h4 data-sw-translate="">Response Messages</h4>
+          <table class="fullwidth">
+            <thead>
+            <tr>
+              <th data-sw-translate="">HTTP Status Code</th>
+              <th data-sw-translate="">Reason</th>
+              <th data-sw-translate="">Response Model</th>
+              <th data-sw-translate="">Headers</th>
+            </tr>
+            </thead>
+            <tbody class="operation-status">
+            <tr><td width="15%" class="code">401</td>
+<td class="markdown"><p>Unauthorized</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td width="15%" class="code">403</td>
+<td class="markdown"><p>Forbidden</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td width="15%" class="code">404</td>
+<td class="markdown"><p>Not Found</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr></tbody>
+          </table>
+          <div class="sandbox_header">
+            <input class="submit" type="submit" value="Try it out!" data-sw-translate="">
+            <a href="http://localhost:8080/swagger-ui.html#" class="response_hider" style="display:none" data-sw-translate="">Hide Response</a>
+            <span class="response_throbber" style="display:none"></span>
+          </div>
+        </form>
+        <div class="response" style="display:none">
+          <h4 class="curl">Curl</h4>
+          <div class="block curl"></div>
+          <h4 data-sw-translate="">Request URL</h4>
+          <div class="block request_url"></div>
+          <h4 data-sw-translate="">Request Headers</h4>
+          <div class="block request_headers"></div>
+          <h4 data-sw-translate="">Response Body</h4>
+          <div class="block response_body"></div>
+          <h4 data-sw-translate="">Response Code</h4>
+          <div class="block response_code"></div>
+          <h4 data-sw-translate="">Response Headers</h4>
+          <div class="block response_headers"></div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</li></ul>
+</li><li id="resource_hotels" class="resource"><div class="heading">
+  <h2>
+    <a href="http://localhost:8080/swagger-ui.html#!/hotels" class="toggleEndpointList" data-id="hotels">hotels</a>  : Hotels lookup and management service
+  </h2>
+  <ul class="options">
+    <li>
+      <a href="http://localhost:8080/swagger-ui.html#!/hotels" id="endpointListTogger_hotels" class="toggleEndpointList" data-id="hotels" data-sw-translate="">Show/Hide</a>
+    </li>
+    <li>
+      <a href="http://localhost:8080/swagger-ui.html#" class="collapseResource" data-id="hotels" data-sw-translate="">
+        List Operations
+      </a>
+    </li>
+    <li>
+      <a href="http://localhost:8080/swagger-ui.html#" class="expandResource" data-id="hotels" data-sw-translate="">
+        Expand Operations
+      </a>
+    </li>
+  </ul>
+</div>
+<ul class="endpoints" id="hotels_endpoint_list" style="display:none">
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="get operation" id="hotels_findHotelByName">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="http://localhost:8080/swagger-ui.html#!/hotels/findHotelByName" class="toggleOperation">get</a>
+          </span>
+          <span class="path">
+          <a href="http://localhost:8080/swagger-ui.html#!/hotels/findHotelByName" class="toggleOperation ">/v1/hotels</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="http://localhost:8080/swagger-ui.html#!/hotels/findHotelByName" class="toggleOperation">Find hotel by name</a>
+          </li>
+        </ul>
+      </div>
+      <div class="content" id="hotels_findHotelByName_content" style="display:none">
+        <h4><span data-sw-translate="">Implementation Notes</span></h4>
+        <div class="markdown"><p>Finds a hotel by it's name</p>
+</div>
+
+        
+          <h4><span data-sw-translate="">Response Class</span> (<span data-sw-translate="">Status</span> 200)</h4>
+            <div class="markdown"><p>OK</p>
+</div>
+          <p><span class="model-signature"><div><div>
+<ul class="signature-nav">
+  <li><a class="description-link" href="http://localhost:8080/swagger-ui.html#" data-sw-translate="">Model</a></li>
+  <li><a class="snippet-link selected" href="http://localhost:8080/swagger-ui.html#" data-sw-translate="">Model Schema</a></li>
+</ul>
+<div>
+
+<div class="signature-container">
+  <div class="description" style="display: none;">
+    <span class="strong">Collection«Hotel» {</span><span class="strong">}</span>
+  </div>
+
+  <div class="snippet" style="display: block;">
+    <pre><code class="json">{}</code></pre>
+    <small class="notice" data-sw-translate=""></small>
+  </div>
+</div>
+
+</div></div></div></span></p>
+          <br>
+          <div class="response-content-type"><div><label data-sw-translate="" for="rct0.43335080072605625">Response Content Type</label>
+<select name="responseContentType" id="rct0.43335080072605625">
+  <option value="*/*">*/*</option>
+</select>
+</div></div>
+
+
+
+        <form accept-charset="UTF-8" class="sandbox">
+          <div style="margin:0;padding:0;display:inline"></div>
+          <h4 data-sw-translate="">Parameters</h4>
+          <table class="fullwidth">
+          <thead>
+            <tr>
+            <th style="width: 100px; max-width: 100px" data-sw-translate="">Parameter</th>
+            <th style="width: 310px; max-width: 310px" data-sw-translate="">Value</th>
+            <th style="width: 200px; max-width: 200px" data-sw-translate="">Description</th>
+            <th style="width: 100px; max-width: 100px" data-sw-translate="">Parameter Type</th>
+            <th style="width: 220px; max-width: 230px" data-sw-translate="">Data Type</th>
+            </tr>
+          </thead>
+          <tbody class="operation-params">
+
+          <tr><td class="code required"><label for="mname0.07986351469365682">name</label></td>
+<td>
+<input class="parameter required" minlength="1" name="name" placeholder="(required)" id="mname0.07986351469365682" type="text" value=""></td>
+<td>
+	<strong><span class="markdown"><p>name</p>
+</span></strong>
+</td>
+<td>query</td>
+<td><span class="model-signature">string</span></td>
+</tr></tbody>
+          </table>
+          <div style="margin:0;padding:0;display:inline"></div>
+          <h4 data-sw-translate="">Response Messages</h4>
+          <table class="fullwidth">
+            <thead>
+            <tr>
+              <th data-sw-translate="">HTTP Status Code</th>
+              <th data-sw-translate="">Reason</th>
+              <th data-sw-translate="">Response Model</th>
+              <th data-sw-translate="">Headers</th>
+            </tr>
+            </thead>
+            <tbody class="operation-status">
+            <tr><td width="15%" class="code">401</td>
+<td class="markdown"><p>Unauthorized</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td width="15%" class="code">403</td>
+<td class="markdown"><p>Forbidden</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td width="15%" class="code">404</td>
+<td class="markdown"><p>Not Found</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr></tbody>
+          </table>
+          <div class="sandbox_header">
+            <input class="submit" type="submit" value="Try it out!" data-sw-translate="">
+            <a href="http://localhost:8080/swagger-ui.html#" class="response_hider" style="display:none" data-sw-translate="">Hide Response</a>
+            <span class="response_throbber" style="display:none"></span>
+          </div>
+        </form>
+        <div class="response" style="display:none">
+          <h4 class="curl">Curl</h4>
+          <div class="block curl"></div>
+          <h4 data-sw-translate="">Request URL</h4>
+          <div class="block request_url"></div>
+          <h4 data-sw-translate="">Request Headers</h4>
+          <div class="block request_headers"></div>
+          <h4 data-sw-translate="">Response Body</h4>
+          <div class="block response_body"></div>
+          <h4 data-sw-translate="">Response Code</h4>
+          <div class="block response_code"></div>
+          <h4 data-sw-translate="">Response Headers</h4>
+          <div class="block response_headers"></div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</li><li class="endpoint">
+  <ul class="operations">
+    <li class="post operation" id="hotels_addHotel">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="http://localhost:8080/swagger-ui.html#!/hotels/addHotel" class="toggleOperation">post</a>
+          </span>
+          <span class="path">
+          <a href="http://localhost:8080/swagger-ui.html#!/hotels/addHotel" class="toggleOperation ">/v1/hotels</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="http://localhost:8080/swagger-ui.html#!/hotels/addHotel" class="toggleOperation">Add new hotel</a>
+          </li>
+        </ul>
+      </div>
+      <div class="content" id="hotels_addHotel_content" style="display:none">
+        <h4><span data-sw-translate="">Implementation Notes</span></h4>
+        <div class="markdown"><p>Adds a new hotel to the system</p>
+</div>
+
+        
+          <h4><span data-sw-translate="">Response Class</span> (<span data-sw-translate="">Status</span> 200)</h4>
+            <div class="markdown"><p>OK</p>
+</div>
+          <p><span class="model-signature"><div><div>
+<ul class="signature-nav">
+  <li><a class="description-link" href="http://localhost:8080/swagger-ui.html#" data-sw-translate="">Model</a></li>
+  <li><a class="snippet-link selected" href="http://localhost:8080/swagger-ui.html#" data-sw-translate="">Model Schema</a></li>
+</ul>
+<div>
+
+<div class="signature-container">
+  <div class="description" style="display: none;">
+    <span class="strong">Hotel {</span><div><span class="propName ">address</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">id</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">modified</span> (<span class="propType">boolean</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">name</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">rooms</span> (<span class="propType">Array[Room]</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span><br><span class="strong">Room {</span><div><span class="propName ">bedType</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">id</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">modified</span> (<span class="propType">boolean</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">name</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">roomNumber</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span>
+  </div>
+
+  <div class="snippet" style="display: block;">
+    <pre><code class="json">{
+  "<span class="attribute">address</span>": <span class="value"><span class="string">"string"</span></span>,
+  "<span class="attribute">id</span>": <span class="value"><span class="string">"string"</span></span>,
+  "<span class="attribute">modified</span>": <span class="value"><span class="literal">true</span></span>,
+  "<span class="attribute">name</span>": <span class="value"><span class="string">"string"</span></span>,
+  "<span class="attribute">rooms</span>": <span class="value">[
+    {
+      "<span class="attribute">bedType</span>": <span class="value"><span class="string">"string"</span></span>,
+      "<span class="attribute">id</span>": <span class="value"><span class="number">0</span></span>,
+      "<span class="attribute">modified</span>": <span class="value"><span class="literal">true</span></span>,
+      "<span class="attribute">name</span>": <span class="value"><span class="string">"string"</span></span>,
+      "<span class="attribute">roomNumber</span>": <span class="value"><span class="string">"string"</span>
+    }</span>
+  ]
+}</span></code></pre>
+    <small class="notice" data-sw-translate=""></small>
+  </div>
+</div>
+
+</div></div></div></span></p>
+          <br>
+          <div class="response-content-type"><div><label data-sw-translate="" for="rct0.7178589866998875">Response Content Type</label>
+<select name="responseContentType" id="rct0.7178589866998875">
+  <option value="*/*">*/*</option>
+</select>
+</div></div>
+
+
+
+        <form accept-charset="UTF-8" class="sandbox">
+          <div style="margin:0;padding:0;display:inline"></div>
+          <h4 data-sw-translate="">Parameters</h4>
+          <table class="fullwidth">
+          <thead>
+            <tr>
+            <th style="width: 100px; max-width: 100px" data-sw-translate="">Parameter</th>
+            <th style="width: 310px; max-width: 310px" data-sw-translate="">Value</th>
+            <th style="width: 200px; max-width: 200px" data-sw-translate="">Description</th>
+            <th style="width: 100px; max-width: 100px" data-sw-translate="">Parameter Type</th>
+            <th style="width: 220px; max-width: 230px" data-sw-translate="">Data Type</th>
+            </tr>
+          </thead>
+          <tbody class="operation-params">
+
+          <tr><td class="code required"><label for="mhotelVO0.08911760204470287">hotelVO</label></td>
+<td>
+				<textarea class="body-textarea required" placeholder="(required)" name="hotelVO" id="mhotelVO0.08911760204470287"></textarea>
+				<div class="editor_holder"></div>
+				<br>
+				<div class="parameter-content-type"><div><label for="pct0.850709613815926" data-sw-translate="">Parameter content type:</label>
+<select name="parameterContentType" id="pct0.850709613815926">
+  <option value="application/json">application/json</option>
+</select>
+</div></div>
+</td>
+<td>
+	<strong><span class="markdown"><p>hotelVO</p>
+</span></strong>
+</td>
+<td>body</td>
+<td><span class="model-signature"><div><div>
+<ul class="signature-nav">
+  <li><a class="description-link" href="http://localhost:8080/swagger-ui.html#" data-sw-translate="">Model</a></li>
+  <li><a class="snippet-link selected" href="http://localhost:8080/swagger-ui.html#" data-sw-translate="">Model Schema</a></li>
+</ul>
+<div>
+
+<div class="signature-container">
+  <div class="description" style="display: none;">
+    <span class="strong">HotelVO {</span><div><span class="propName ">address</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">id</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">name</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">rooms</span> (<span class="propType">Array[Room]</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span><br><span class="strong">Room {</span><div><span class="propName ">bedType</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">id</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">modified</span> (<span class="propType">boolean</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">name</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">roomNumber</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span>
+  </div>
+
+  <div class="snippet" style="display: block;">
+    <pre><code class="json">{
+  "<span class="attribute">address</span>": <span class="value"><span class="string">"string"</span></span>,
+  "<span class="attribute">id</span>": <span class="value"><span class="string">"string"</span></span>,
+  "<span class="attribute">name</span>": <span class="value"><span class="string">"string"</span></span>,
+  "<span class="attribute">rooms</span>": <span class="value">[
+    {
+      "<span class="attribute">bedType</span>": <span class="value"><span class="string">"string"</span></span>,
+      "<span class="attribute">id</span>": <span class="value"><span class="number">0</span></span>,
+      "<span class="attribute">modified</span>": <span class="value"><span class="literal">true</span></span>,
+      "<span class="attribute">name</span>": <span class="value"><span class="string">"string"</span></span>,
+      "<span class="attribute">roomNumber</span>": <span class="value"><span class="string">"string"</span>
+    }</span>
+  ]
+}</span></code></pre>
+    <small class="notice" data-sw-translate="">Click to set as parameter value</small>
+  </div>
+</div>
+
+</div></div></div></span></td>
+</tr></tbody>
+          </table>
+          <div style="margin:0;padding:0;display:inline"></div>
+          <h4 data-sw-translate="">Response Messages</h4>
+          <table class="fullwidth">
+            <thead>
+            <tr>
+              <th data-sw-translate="">HTTP Status Code</th>
+              <th data-sw-translate="">Reason</th>
+              <th data-sw-translate="">Response Model</th>
+              <th data-sw-translate="">Headers</th>
+            </tr>
+            </thead>
+            <tbody class="operation-status">
+            <tr><td width="15%" class="code">201</td>
+<td class="markdown"><p>Created</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td width="15%" class="code">401</td>
+<td class="markdown"><p>Unauthorized</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td width="15%" class="code">403</td>
+<td class="markdown"><p>Forbidden</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td width="15%" class="code">404</td>
+<td class="markdown"><p>Not Found</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr></tbody>
+          </table>
+          <div class="sandbox_header">
+            <input class="submit" type="submit" value="Try it out!" data-sw-translate="">
+            <a href="http://localhost:8080/swagger-ui.html#" class="response_hider" style="display:none" data-sw-translate="">Hide Response</a>
+            <span class="response_throbber" style="display:none"></span>
+          </div>
+        </form>
+        <div class="response" style="display:none">
+          <h4 class="curl">Curl</h4>
+          <div class="block curl"></div>
+          <h4 data-sw-translate="">Request URL</h4>
+          <div class="block request_url"></div>
+          <h4 data-sw-translate="">Request Headers</h4>
+          <div class="block request_headers"></div>
+          <h4 data-sw-translate="">Response Body</h4>
+          <div class="block response_body"></div>
+          <h4 data-sw-translate="">Response Code</h4>
+          <div class="block response_code"></div>
+          <h4 data-sw-translate="">Response Headers</h4>
+          <div class="block response_headers"></div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</li><li class="endpoint">
+  <ul class="operations">
+    <li class="get operation" id="hotels_findAllHotels">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="http://localhost:8080/swagger-ui.html#!/hotels/findAllHotels" class="toggleOperation">get</a>
+          </span>
+          <span class="path">
+          <a href="http://localhost:8080/swagger-ui.html#!/hotels/findAllHotels" class="toggleOperation ">/v1/hotels/</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="http://localhost:8080/swagger-ui.html#!/hotels/findAllHotels" class="toggleOperation">Get all hotels</a>
+          </li>
+        </ul>
+      </div>
+      <div class="content" id="hotels_findAllHotels_content" style="display:none">
+        <h4><span data-sw-translate="">Implementation Notes</span></h4>
+        <div class="markdown"><p>Finds all hotels in the system</p>
+</div>
+
+        
+          <h4><span data-sw-translate="">Response Class</span> (<span data-sw-translate="">Status</span> 200)</h4>
+            <div class="markdown"><p>OK</p>
+</div>
+          <p><span class="model-signature"><div><div>
+<ul class="signature-nav">
+  <li><a class="description-link" href="http://localhost:8080/swagger-ui.html#" data-sw-translate="">Model</a></li>
+  <li><a class="snippet-link selected" href="http://localhost:8080/swagger-ui.html#" data-sw-translate="">Model Schema</a></li>
+</ul>
+<div>
+
+<div class="signature-container">
+  <div class="description" style="display: none;">
+    <span class="strong">Collection«Hotel» {</span><span class="strong">}</span>
+  </div>
+
+  <div class="snippet" style="display: block;">
+    <pre><code class="json">{}</code></pre>
+    <small class="notice" data-sw-translate=""></small>
+  </div>
+</div>
+
+</div></div></div></span></p>
+          <br>
+          <div class="response-content-type"><div><label data-sw-translate="" for="rct0.9827571159947608">Response Content Type</label>
+<select name="responseContentType" id="rct0.9827571159947608">
+  <option value="*/*">*/*</option>
+</select>
+</div></div>
+
+
+
+        <form accept-charset="UTF-8" class="sandbox">
+          <div style="margin:0;padding:0;display:inline"></div>
+          <div style="margin:0;padding:0;display:inline"></div>
+          <h4 data-sw-translate="">Response Messages</h4>
+          <table class="fullwidth">
+            <thead>
+            <tr>
+              <th data-sw-translate="">HTTP Status Code</th>
+              <th data-sw-translate="">Reason</th>
+              <th data-sw-translate="">Response Model</th>
+              <th data-sw-translate="">Headers</th>
+            </tr>
+            </thead>
+            <tbody class="operation-status">
+            <tr><td width="15%" class="code">401</td>
+<td class="markdown"><p>Unauthorized</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td width="15%" class="code">403</td>
+<td class="markdown"><p>Forbidden</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td width="15%" class="code">404</td>
+<td class="markdown"><p>Not Found</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr></tbody>
+          </table>
+          <div class="sandbox_header">
+            <input class="submit" type="submit" value="Try it out!" data-sw-translate="">
+            <a href="http://localhost:8080/swagger-ui.html#" class="response_hider" style="display:none" data-sw-translate="">Hide Response</a>
+            <span class="response_throbber" style="display:none"></span>
+          </div>
+        </form>
+        <div class="response" style="display:none">
+          <h4 class="curl">Curl</h4>
+          <div class="block curl"></div>
+          <h4 data-sw-translate="">Request URL</h4>
+          <div class="block request_url"></div>
+          <h4 data-sw-translate="">Request Headers</h4>
+          <div class="block request_headers"></div>
+          <h4 data-sw-translate="">Response Body</h4>
+          <div class="block response_body"></div>
+          <h4 data-sw-translate="">Response Code</h4>
+          <div class="block response_code"></div>
+          <h4 data-sw-translate="">Response Headers</h4>
+          <div class="block response_headers"></div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</li><li class="endpoint">
+  <ul class="operations">
+    <li class="get operation" id="hotels_findHotelById">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="http://localhost:8080/swagger-ui.html#!/hotels/findHotelById" class="toggleOperation">get</a>
+          </span>
+          <span class="path">
+          <a href="http://localhost:8080/swagger-ui.html#!/hotels/findHotelById" class="toggleOperation ">/v1/hotels/{hotel_id}</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="http://localhost:8080/swagger-ui.html#!/hotels/findHotelById" class="toggleOperation">Find hotel by id</a>
+          </li>
+        </ul>
+      </div>
+      <div class="content" id="hotels_findHotelById_content" style="display:none">
+        <h4><span data-sw-translate="">Implementation Notes</span></h4>
+        <div class="markdown"><p>Finds a hotel by it's id</p>
+</div>
+
+        
+          <h4><span data-sw-translate="">Response Class</span> (<span data-sw-translate="">Status</span> 200)</h4>
+            <div class="markdown"><p>OK</p>
+</div>
+          <p><span class="model-signature"><div><div>
+<ul class="signature-nav">
+  <li><a class="description-link" href="http://localhost:8080/swagger-ui.html#" data-sw-translate="">Model</a></li>
+  <li><a class="snippet-link selected" href="http://localhost:8080/swagger-ui.html#" data-sw-translate="">Model Schema</a></li>
+</ul>
+<div>
+
+<div class="signature-container">
+  <div class="description" style="display: none;">
+    <span class="strong">Hotel {</span><div><span class="propName ">address</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">id</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">modified</span> (<span class="propType">boolean</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">name</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">rooms</span> (<span class="propType">Array[Room]</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span><br><span class="strong">Room {</span><div><span class="propName ">bedType</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">id</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">modified</span> (<span class="propType">boolean</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">name</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">roomNumber</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span>
+  </div>
+
+  <div class="snippet" style="display: block;">
+    <pre><code class="json">{
+  "<span class="attribute">address</span>": <span class="value"><span class="string">"string"</span></span>,
+  "<span class="attribute">id</span>": <span class="value"><span class="string">"string"</span></span>,
+  "<span class="attribute">modified</span>": <span class="value"><span class="literal">true</span></span>,
+  "<span class="attribute">name</span>": <span class="value"><span class="string">"string"</span></span>,
+  "<span class="attribute">rooms</span>": <span class="value">[
+    {
+      "<span class="attribute">bedType</span>": <span class="value"><span class="string">"string"</span></span>,
+      "<span class="attribute">id</span>": <span class="value"><span class="number">0</span></span>,
+      "<span class="attribute">modified</span>": <span class="value"><span class="literal">true</span></span>,
+      "<span class="attribute">name</span>": <span class="value"><span class="string">"string"</span></span>,
+      "<span class="attribute">roomNumber</span>": <span class="value"><span class="string">"string"</span>
+    }</span>
+  ]
+}</span></code></pre>
+    <small class="notice" data-sw-translate=""></small>
+  </div>
+</div>
+
+</div></div></div></span></p>
+          <br>
+          <div class="response-content-type"><div><label data-sw-translate="" for="rct0.4787823375309672">Response Content Type</label>
+<select name="responseContentType" id="rct0.4787823375309672">
+  <option value="*/*">*/*</option>
+</select>
+</div></div>
+
+
+
+        <form accept-charset="UTF-8" class="sandbox">
+          <div style="margin:0;padding:0;display:inline"></div>
+          <h4 data-sw-translate="">Parameters</h4>
+          <table class="fullwidth">
+          <thead>
+            <tr>
+            <th style="width: 100px; max-width: 100px" data-sw-translate="">Parameter</th>
+            <th style="width: 310px; max-width: 310px" data-sw-translate="">Value</th>
+            <th style="width: 200px; max-width: 200px" data-sw-translate="">Description</th>
+            <th style="width: 100px; max-width: 100px" data-sw-translate="">Parameter Type</th>
+            <th style="width: 220px; max-width: 230px" data-sw-translate="">Data Type</th>
+            </tr>
+          </thead>
+          <tbody class="operation-params">
+
+          <tr><td class="code required"><label for="mhotel_id0.17220076037048027">hotel_id</label></td>
+<td>
+<input class="parameter required" minlength="1" name="hotel_id" placeholder="(required)" id="mhotel_id0.17220076037048027" type="text" value=""></td>
+<td>
+	<strong><span class="markdown"><p>hotel_id</p>
+</span></strong>
+</td>
+<td>path</td>
+<td><span class="model-signature">string</span></td>
+</tr></tbody>
+          </table>
+          <div style="margin:0;padding:0;display:inline"></div>
+          <h4 data-sw-translate="">Response Messages</h4>
+          <table class="fullwidth">
+            <thead>
+            <tr>
+              <th data-sw-translate="">HTTP Status Code</th>
+              <th data-sw-translate="">Reason</th>
+              <th data-sw-translate="">Response Model</th>
+              <th data-sw-translate="">Headers</th>
+            </tr>
+            </thead>
+            <tbody class="operation-status">
+            <tr><td width="15%" class="code">401</td>
+<td class="markdown"><p>Unauthorized</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td width="15%" class="code">403</td>
+<td class="markdown"><p>Forbidden</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td width="15%" class="code">404</td>
+<td class="markdown"><p>Not Found</p>
+</td>
+<td width="50%"><span class="model-signature"></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr></tbody>
+          </table>
+          <div class="sandbox_header">
+            <input class="submit" type="submit" value="Try it out!" data-sw-translate="">
+            <a href="http://localhost:8080/swagger-ui.html#" class="response_hider" style="display:none" data-sw-translate="">Hide Response</a>
+            <span class="response_throbber" style="display:none"></span>
+          </div>
+        </form>
+        <div class="response" style="display:none">
+          <h4 class="curl">Curl</h4>
+          <div class="block curl"></div>
+          <h4 data-sw-translate="">Request URL</h4>
+          <div class="block request_url"></div>
+          <h4 data-sw-translate="">Request Headers</h4>
+          <div class="block request_headers"></div>
+          <h4 data-sw-translate="">Response Body</h4>
+          <div class="block response_body"></div>
+          <h4 data-sw-translate="">Response Code</h4>
+          <div class="block response_code"></div>
+          <h4 data-sw-translate="">Response Headers</h4>
+          <div class="block response_headers"></div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</li></ul>
+</li></ul>
+
+  <div class="footer">
+    <h4 style="color: #999">[ <span style="font-variant: small-caps">base url</span>: /
+  , <span style="font-variant: small-caps" data-sw-translate="">api version</span>: 1.0.0
+    ]
+    </h4>
+    </div>
+</div>
+</div>
+
+
+</body></html>

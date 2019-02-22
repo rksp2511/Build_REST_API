@@ -1,16 +1,17 @@
 package com.amex.hotelbooking.domain.repository;
 
+import com.amex.hotelbooking.domain.model.entity.Hotel;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 
 /**
  * @author Nagaraja Settra
  */
-public interface HotelRepository<Hotel, String> extends CrudRepository<Hotel, String> {
-//    public interface HotelRepository<Hotel, String> extends Repository<Hotel, String> {
+@Repository
+public interface HotelRepository extends CrudRepository<Hotel, String> {
 
-    boolean containsName(String name);
+    Collection<Hotel> findByName(String name);
 
-    public Collection<Hotel> findByName(String name) throws Exception;
 }

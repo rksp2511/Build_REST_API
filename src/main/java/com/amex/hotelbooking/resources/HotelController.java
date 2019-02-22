@@ -3,6 +3,8 @@ package com.amex.hotelbooking.resources;
 import com.amex.hotelbooking.domain.model.entity.Hotel;
 import com.amex.hotelbooking.domain.service.HotelService;
 import com.amex.hotelbooking.domain.vo.HotelVO;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
@@ -19,6 +21,7 @@ import java.util.Optional;
  */
 @RestController
 @RequestMapping("/v1/hotels")
+@Api(value = "hotels", description = "Hotels lookup and management service", tags = "hotels")
 public class HotelController {
 
     /**
@@ -45,8 +48,9 @@ public class HotelController {
      * @return collection of hotels
      */
     @RequestMapping(value = "/", method = RequestMethod.GET)
+    @ApiOperation(value = "Get all hotels", notes = "Finds all hotels in the system", nickname = "findAllHotels")
     public ResponseEntity<Collection<Hotel>> findAll() {
-        logger.info(String.format("hotelService findAll invoked:{}", hotelService.getClass().getName()));
+        logger.info(String.format("hotelService findAll invoked: %s", hotelService.getClass().getName()));
 
         Collection<Hotel> hotels;
         try {
@@ -62,14 +66,13 @@ public class HotelController {
 
     /**
      * Get hotels with the specified name <code>http://.../v1/hotels</code>.
-     * At this point hotel names are not case sensitive
      * @param name hotel name
      * @return
      */
     @RequestMapping(method = RequestMethod.GET)
+    @ApiOperation(value = "Find hotel by name", notes = "Finds a hotel by it's name", nickname = "findHotelByName")
     public ResponseEntity<Collection<Hotel>> findByName(@RequestParam("name") String name) {
         logger.info(String.format("hotelService findByName invoked: %s for %s ", hotelService.getClass().getName(), name));
-        name = name.trim().toLowerCase();
 
         Collection<Hotel> hotels;
         try {
@@ -91,8 +94,9 @@ public class HotelController {
      * @return
      */
     @RequestMapping(value = "/{hotel_id}", method = RequestMethod.GET)
+    @ApiOperation(value = "Find hotel by id", notes = "Finds a hotel by it's id", nickname = "findHotelById")
     public ResponseEntity<Hotel> findById(@PathVariable("hotel_id") String id) {
-        logger.info(String.format("hotelService findById invoked: {} for {} ", hotelService.getClass().getName(), id));
+        logger.info(String.format("hotelService findById invoked: %s for %s ", hotelService.getClass().getName(), id));
         id = id.trim();
         Optional<Hotel> hotel;
         try {
@@ -113,6 +117,7 @@ public class HotelController {
      * @return
      */
     @RequestMapping(method = RequestMethod.POST)
+    @ApiOperation(value = "Add new hotel", notes = "Adds a new hotel to the system", nickname = "addHotel")
     public ResponseEntity<Hotel> add(@RequestBody HotelVO hotelVO) {
         logger.info(String.format("hotelService add() invoked: %s for %s ", hotelService.getClass().getName(), hotelVO.getName()));
 

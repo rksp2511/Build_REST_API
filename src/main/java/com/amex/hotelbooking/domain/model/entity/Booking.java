@@ -1,17 +1,32 @@
 package com.amex.hotelbooking.domain.model.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.time.LocalDate;
 
 /**
  * @author Nagaraja Settra
  */
 @Entity
+@Table(name = "BOOKING")
 public class Booking extends BaseEntity<String> {
+
+    @Column(name = "HOTEL_ID")
     private String hotelId;
+
+    @Column(name = "ROOM_ID")
     private Long roomId;
+
+    @Column(name = "CHECKIN_DATE")
     private LocalDate checkinDate;
+
+    @Column(name = "CHECKOUT_DATE")
     private LocalDate checkoutDate;
+
+    public Booking() {
+        super();
+    }
 
     /**
      * @param id

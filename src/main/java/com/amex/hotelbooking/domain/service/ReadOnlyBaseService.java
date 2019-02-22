@@ -7,9 +7,9 @@ import com.amex.hotelbooking.domain.repository.HotelRepository;
  */
 public abstract class ReadOnlyBaseService<TE, T> {
 
-    private HotelRepository<TE, T> repository;
+    private HotelRepository repository;
 
-    public ReadOnlyBaseService(HotelRepository<TE, T> repository) {
+    public ReadOnlyBaseService(HotelRepository repository) {
         this.repository = repository;
     }
 }

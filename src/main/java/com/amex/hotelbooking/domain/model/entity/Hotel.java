@@ -1,19 +1,27 @@
 package com.amex.hotelbooking.domain.model.entity;
 
+import javax.persistence.*;
 import javax.persistence.Entity;
-import javax.persistence.Table;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * @author Nagaraja Settra
  */
-@Entity(name = "Hotel")
+@Entity
 @Table(name = "HOTEL")
 public class Hotel extends BaseEntity<String> {
 
-    private List<Room> rooms = new ArrayList<>();
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name="HOTEL_ID")
+    private List<Room> rooms;
+
+    @Column(name="ADDRESS")
     private String address;
+
+    public Hotel() {
+        super();
+    }
 
     /**
      * @param id
@@ -31,6 +39,11 @@ public class Hotel extends BaseEntity<String> {
 
     public void setRooms(List<Room> rooms) {
         this.rooms = rooms;
+    }
+
+    public void addRoom(Room room) {
+        rooms.add(room);
+        //room.setHotel(this);
     }
 
     public String getAddress() {
