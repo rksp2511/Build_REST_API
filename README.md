@@ -14,7 +14,7 @@ http http://localhost:8080/v1/hotels/NYC1
 http http://localhost:8080/v1/hotels?name="Pen Station Hotel"
 http POST http://localhost:8080/v1/hotels
 
-http http://localhost:8080/v1/booking
+http POST http://localhost:8080/v1/booking
 http http://localhost:8080/v1/booking?name="My booking"
 http http://localhost:8080/v1/booking/BOOK1
 ```
